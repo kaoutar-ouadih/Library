@@ -22,3 +22,62 @@ nav{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 
 }
+
+.add{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add p {
+    margin-left: 4px;
+}
+
+.add button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog{
+    background-color: #f0f0f0;
+    width: 230px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+dialog form{
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+form div{
+    min-width: 230px;
+}
+
+dialog form button{
+    width: 80%;
+    background-color: rgb(159, 255, 156);
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.inputs{
+    border: none;
+    font-weight: bold;
+    height: 22px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+button:hover {
+    filter: brightness(90%);
+}
+
+

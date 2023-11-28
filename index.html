@@ -8,13 +8,40 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- navBar -->
     <nav>
         <ul>
             <li id="logo">Library</li>
             <li><button> Log in</button></li>
         </ul>
     </nav>
-
+    <!-- add new book -->
+    <div class="add">
+        <button>
+            <svg style="height: 26px; width: 26px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle</title><path d="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
+             <p>Add a Book</p>
+        </button>
+    </div>
+    <!-- the dialog -->
+    <dialog open >
+        <h2>Add a new book</h2>
+        <form action="">
+            <div>
+                <input type="text" id="author" autofocus placeholder="Author" class="inputs">
+            </div>
+            <div>
+                <input type="text" id="title" placeholder="Title" class="inputs">
+            </div>
+            <div>
+                <input type="number" id="numPages" placeholder="Number of Pages" class="inputs">
+            </div>
+            <div>
+                <label style="font-weight: bold;" for="read">Have you read it?</label>
+                <input type="checkbox" id="read">
+            </div>
+            <button>Add</button>
+        </form>
+    </dialog>
     
 </body>
 </html>
