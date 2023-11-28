@@ -17,31 +17,35 @@
     </nav>
     <!-- add new book -->
     <div class="add">
-        <button>
+        <button id="addBtn">
             <svg style="height: 26px; width: 26px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle</title><path d="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
              <p>Add a Book</p>
         </button>
     </div>
     <!-- the dialog -->
-    <dialog open >
+    <dialog>
         <h2>Add a new book</h2>
         <form action="">
             <div>
-                <input type="text" id="author" autofocus placeholder="Author" class="inputs">
+                <input type="text" id="author" autofocus placeholder="Author" class="inputs" required>
             </div>
             <div>
-                <input type="text" id="title" placeholder="Title" class="inputs">
+                <input type="text" id="title" placeholder="Title" class="inputs" required>
             </div>
             <div>
-                <input type="number" id="numPages" placeholder="Number of Pages" class="inputs">
+                <input type="number" id="numPages" placeholder="Number of Pages" class="inputs" required>
             </div>
             <div>
                 <label style="font-weight: bold;" for="read">Have you read it?</label>
-                <input type="checkbox" id="read">
+                <input type="checkbox" id="read" >
             </div>
-            <button>Add</button>
+            <button type="submit" id="addClose" >Add</button>
         </form>
     </dialog>
+
+    <div id="output">
+
+    </div>
     
 </body>
 </html>
