@@ -39,6 +39,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 }
 
 dialog{
@@ -83,8 +84,9 @@ button:hover {
 
 #container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 220px);
+    grid-template-columns: repeat(auto-fit, 220px);
     gap: 15px;
+    text-align: center;
 }
 
 
