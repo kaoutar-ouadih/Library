@@ -87,6 +87,7 @@ button:hover {
     grid-template-columns: repeat(auto-fit, 220px);
     gap: 15px;
     text-align: center;
+    justify-content: center;
 }
 
 
