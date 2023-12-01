@@ -57,7 +57,9 @@ let isRead = false; // Store the initial value of the checkbox
 
 read.addEventListener('input', () => {
         isRead = read.checked; // Update the value of isRead when the checkbox state changes
+        console.log(isRead);
 });
+console.log(isRead);
 
 
 
@@ -119,7 +121,7 @@ addClose.addEventListener("click", (event)=>{
         card.appendChild(remove);
 
         container.appendChild(card);
-
+        isRead = false;
         dialog.close();
 
         remove.addEventListener('click', ()=>{
